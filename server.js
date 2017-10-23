@@ -44,14 +44,18 @@ app.get('/', function(req, res){
   res.render('home.hbs', {
     pageTitle: "This is the second time I'm doing this",
     //currentYear: new Date().getFullYear()
-  })
-})
+  });
+});
 
 app.get('/about', function(req, res){
   res.render('about.hbs', {
     pageTitle: "This is the second time I'm doing this"
     //currentYear: new Date().getFullYear()
   });
+})
+
+app.get('/projects', function(req, res){
+  res.render('projects.hbs');
 })
 
 app.listen(port, function(){
